@@ -1,6 +1,6 @@
 {
   "name": "engines-enforcer",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Enforce node engines specified in package.json",
   "license": "MIT",
   "homepage": "https://github.com/dawsbot/engines-enforcer#readme",
