@@ -30,13 +30,13 @@ yarn add engines-enforcer
 
 ```js
 // if your current node version does not match "engines" in "package.json"
-require('engines-enforcer')('./package.json');
+require('engines-enforcer')(require('path').join(__dirname, './package.json'));
 //=> 'Invalid node version. This package requires ">=7.0". You are using "v4.7.0"'
 ```
 
 ```js
 // if your current node version matches, it continues silently
-require('engines-enforcer')('./package.json');
+require('engines-enforcer')(require('path').join(__dirname, './package.json'));
 // the rest of your code...
 ```
 
